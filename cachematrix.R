@@ -24,6 +24,7 @@ makeCacheMatrix <- function(x = matrix()) {
 cacheSolve <- function(x, ...) {
         ## x: output of makeCacheMatrix()
         ## return: inverse of the original matrix input to makeCacheMatrix()
+        ##: first checks to make sure the operation has not been solved yet
         
         inv = x$getinv()
         
